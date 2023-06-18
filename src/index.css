@@ -1,54 +1,60 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family:'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .app {
     display: flex;
 }
 
-/*----- Nav -----*/
- nav {
-     height: 100vh;
-     background-color: rgb(43,43,63);
-     color: rgb(255,255,255);
-     tex-align: center;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
- }
+#link {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
 
- nav .logo-container,
- nav .controls-container {
-     padding: 40px 25px;
-     display: flex;
-     flex-direction: column;
- }
+/* ----- Nav ------ */
 
- nav .logo-container img {
-     width: 20px;
- }
+nav {
+    height: 100vh;
+    background-color: rgb(43, 43, 63);
+    color: rgb(255,255,255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
- nav .icon {
-     color: rgb(255,255,255);
- }
+nav .logo-container,
+nav .controls-container {
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+}
 
-/*----- Dashboard -----*/
+nav .logo-container img {
+    width: 20px;
+}
+
+nav .icon {
+    color: rgb(255,255,255);
+}
+
+/* ----- Dashboard ------ */
+
 .dashboard {
     padding: 30px;
     width: 100%;
-  }
-
-.dashboard .ticket-container {
-    height: 80vh;
-    overflow: scroll; /* be able to scroll through extra items without having title move */
 }
 
-/*----- TicketCard -----*/
+.dashboard .ticket-container {
+    height:80vh;
+    overflow: scroll;
+}
+/* ----- TicketCard ------ */
 .ticket-card {
     display: flex;
-    width: 100%;
+    width: 100%
 }
 
 .ticket-card #link {
@@ -57,7 +63,7 @@ html, body {
 }
 
 .ticket-card #link > * {
-    background-color: rgb(211,221,221);
+    background-color: rgb(221, 221, 221);
     margin: 2px;
     padding: 30px;
     width: 100%;
@@ -66,16 +72,29 @@ html, body {
 }
 
 
+.ticket-card .ticket-color {
+    width: 15px;
+    margin: 2px;
+}
 
+.ticket-card .avatar-container {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+}
 
+.ticket-card .img-container {
+    height: 75px;
+    width: 75px;
+    border-radius: 38px;
+    overflow: hidden;
+}
 
+.ticket-card .img-container img {
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
+.ticket-card .status-display {
+    display: flex;
+    justify-content: center;
+}
