@@ -84,9 +84,9 @@ nav .icon {
 }
 
 .ticket-card .img-container {
-    height: 75px;
-    width: 75px;
-    border-radius: 38px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
     overflow: hidden;
 }
 
@@ -104,38 +104,27 @@ nav .icon {
     justify-content: center;
 }
 
-.ticket-card .priority-display .star-container{
+
+.ticket-card .priority-display .star-container {
     display: flex;
 }
 
-.ticket-card .priority-display .star-container h3{
+.ticket-card .priority-display .star-container h3 {
     margin: 7px;
     padding: 0;
+    color: rgb(167, 167, 167);
 }
 
 .ticket-card .progress-display {
     min-width: 200px;
 }
 
-.ticket-card .progress-bar {
-    width: 100%;
-    height: 30px;
-    background-color: rgb(158,158,158);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-
-.ticket-card .progress-bar .progress-indicator{
-    background-color: rgb(184,184,175);
-    height: 100%;
-}
-
 .ticket-card .delete-block {
-    background-color: rgb(211,211,211);
+    background-color: rgb(221, 221, 221);
     width: 50px;
     margin: 2px;
-    justify-content: center;
+    display: flex;
+    justify-content:center;
     align-items: center;
 }
 
@@ -143,9 +132,23 @@ nav .icon {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: rgb(61,61,61);
+    background-color: rgb(61, 61, 61);
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(255,255,255);
+}
+
+.ticket-card .progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.ticket-card  .progress-bar .progress-indicator {
+    background-color: rgb(104, 104, 175);
+    height: 100%;
 }

@@ -41,6 +41,15 @@ const Dashboard = () => {
         }
     ]
 
+        //if more than 5 categories, all others will be same. we could change that later.
+        const colors = [
+            'rgb(255,179,186)',
+            'rgb(255,223,186)',
+            'rgb(255,255,186)',
+            'rgb(186,255,201)',
+            'rgb(186,255,255)'
+        ]
+
     const uniqueCategories =  [
         //if tickets exist, then loop through all the ticket items, and get the category and return it. checking for uniqueness and assign using Set (Set only stores the unique items)
         ...new Set(tickets?.map(({category}) => category))
@@ -67,7 +76,7 @@ const Dashboard = () => {
                         .map((filteredTicket, _index) => (
                         <TicketCard
                             id= {_index}
-                            color={filteredTicket.color}
+                            color={colors[categoryIndex] || colors[0]}
                             ticket= {filteredTicket}
                             />
                         ))
