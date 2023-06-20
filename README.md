@@ -9,7 +9,7 @@ To use this project, you need to set yourself up with Astra Database at https://
 then just create a .env file using the example given in the files. You will need an API Key and Token Id.
 You can use the dummy-data.js file to populate the database.
 
-To use this project:
+Once configured, then..
 
 In terminal 1, do ***"npm run start:frontend"***<br/>
 In terminal 2, do ***"npm run start:backend"***
