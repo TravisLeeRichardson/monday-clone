@@ -1,5 +1,5 @@
 ![Monday Dashboard](monday-dashboard.png)
-![Monday Ticket](monday-ticket.png)
+![Monday Ticket](Monday-ticket.png)
 ![Monday Update Ticket](monday-update.png)
 
 ---
