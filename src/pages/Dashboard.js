@@ -10,7 +10,7 @@ const Dashboard = () => {
     useEffect(async () => {
         const response = await axios.get('http://localhost:8000/tickets')
 
-        //wasn't sure how to get the Documet Id with the object.. open to better suggestions
+        //wasn't sure how to get the Document Id with the object.. open to better suggestions
         const dataObject = response.data.data
 
         const arrayOfKeys = Object.keys(dataObject)
